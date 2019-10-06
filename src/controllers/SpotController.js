@@ -20,8 +20,6 @@ module.exports = {
 
         const user = await User.findById(user_id);
 
-        techs.toUpperCase()
-
         if (!user) {
             return res.status(400).json({ error: "Users does not exist" })
         }
